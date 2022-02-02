@@ -22,7 +22,7 @@ nav {
     top: 5px;
 }
 
-#menu-burger{
+#menu-burger {
     position: absolute;
     z-index: 1;
     top: 5px;
@@ -33,7 +33,7 @@ nav {
     border-radius: 10px;
 }
 
-.bi, .bi-list{
+.bi, .bi-list {
     font-size: xxx-large;
     color: white;
     text-align: center;
@@ -66,8 +66,78 @@ ul li a {
     color: white;
     text-align: center;
 }
-#datapicker{
+
+#datapicker {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.74);
+    bottom: -550px;
+    position: relative;
+    padding-top: 15px;
+    align-content: center;
+}
 
+a.form-control.btn-success {
+    text-decoration: none;
+    text-align: center;
+}
+
+/*==================================MEDIA HEADER================================================*/
+@media screen and (max-width: 768px) {
+
+    #datapicker {
+        bottom: -285px;
+    }
+}
+
+/*=================================FIN MEDIA HEADER===============================================*/
+
+
+/*=================================MAIN===============================================*/
+main figure {
+    display: flex;
+    justify-content: space-around;
+    margin: 10% auto;
+    width: 100%;
+}
+.carrousel{
+    width: 300px;
+    /*height: 350px;*/
+    /*overflow: hidden;*/
+}
+.next {
+    position: absolute;
+    top: 60px;
+    right: -50px;
+    color: black;
+    font-size: 40px;
+}
+.prev {
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    color: black;
+    font-size: 40px;
+    z-index: 9;
+}
+
+main figure figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
+button.btn.btn-success {
+    width: 150px;
+    margin: 10px 0;
+}
+
+/*=================================FOOTER===============================================*/
+footer figure {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+}
+
+footer figure img {
+    width: 200px;
 }

@@ -20,9 +20,11 @@
     <!--    Bootstrap cdn-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- SLICK CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -44,31 +46,112 @@
     </nav>
     <article class="titre">
         <h1>Bienvenue à bord</h1>
-        <p>location de voiture 24h/24 et 7j/7</p>
+        <span>location de voiture 24h/24 et 7j/7</span>
     </article>
-    <section class="container">
-        <form id="datapicker" class="row d-flex justify-content-center">
-            <select class="col-3 " name="" id="">
-                <option value="">Adresse de depart</option>
-            </select>
-            <input class="col-3 " type="date" name="debut" id="debut" placeholder="Début de location">
-            <input class="col-3 " type="date" name="fin" id="fin" placeholder="Fin de location">
-            <a href="#" class="col-3 btn-success">Valider ma recherche</a>
+    <div class="container">
+        <form id="datapicker" class="row justify-content-center">
+
+            <p class="col-lg-3 col-md-4 col-sm-12 ">
+                <select class="form-select" name="adresse" id="adresse">
+                    <option selected>Adresse de depart</option>
+                    <option value="adresse1">adresse1</option>
+                    <option value="adresse2">adresse2</option>
+                    <option value="adresse3">adresse3</option>
+                </select>
+            </p>
+
+            <p class="col-lg-3 col-md-4 col-sm-12">
+                <input class=" form-control" type="date" name="debut" id="debut">
+            </p>
+
+            <p class="col-lg-3 col-md-4 col-sm-12">
+                <input class="form-control " type="date" name="fin" id="fin">
+            </p>
+
+            <p class="col-lg-3 col-md-12 ">
+                <a href="#" class="form-control btn-success">Valider ma recherche</a>
+            </p>
+
         </form>
-    </section>
+    </div>
 
 
 </header>
 <main class="container">
-
+    <figure>
+        <div class="carrousel">
+            <img src="images/vehicule1.png" alt="vehicule1">
+            <img src="images/vehicule1.png" alt="vehicule1">
+        </div>
+        <figcaption>
+            <h4>Peugeot 208</h4>
+            <p>Diesel, 5 porte,GPS, AutoRadio,Forfait 1000km (0,55/km supplémentaire)</p>
+            <span class="prix">999 &#8364 - Agence de Paris</span>
+            <button class="btn btn-success">Réserver et Payer</button>
+        </figcaption>
+    </figure>
+    <figure>
+        <div class="carrousel">
+            <img src="images/vehicule2.png" alt="vehicule2">
+            <img src="images/vehicule2.png" alt="vehicule2">
+        </div>
+        <figcaption>
+            <h4>Ford Focus </h4>
+            <p>Diesel, 5 porte,GPS, AutoRadio,Forfait 1000km (0,55/km supplémentaire)</p>
+            <span class="prix">999 &#8364 - Agence de Paris</span>
+            <button class="btn btn-success">Réserver et Payer</button>
+        </figcaption>
+    </figure>
+    <figure>
+        <div class="carrousel">
+            <img src="images/vehicule3.png" alt="vehicule3">
+            <img src="images/vehicule3.png" alt="vehicule3">
+        </div>
+        <figcaption>
+            <h4>Audi A1</h4>
+            <p>Diesel, 5 porte,GPS, AutoRadio,Forfait 1000km (0,55/km supplémentaire)</p>
+            <span class="prix">1000 &#8364 - Agence de Paris </span>
+            <button class="btn btn-success">Réserver et Payer</button>
+        </figcaption>
+    </figure>
+    <figure>
+        <div class="carrousel">
+            <img src="images/vehicule4.png" alt="vehicule4">
+            <img src="images/vehicule4.png" alt="vehicule4">
+        </div>
+        <figcaption>
+            <h4>Opel Mokka</h4>
+            <p>Diesel, 5 porte,GPS, AutoRadio,Forfait 1000km (0,55/km supplémentaire)</p>
+            <span class="prix">1150 &#8364 - Agence de Paris</span>
+            <button class="btn btn-success">Réserver et Payer</button>
+        </figcaption>
+    </figure>
 </main>
 
-<footer>
-
+<footer class="container">
+    <figure>
+        <img src="images/agence.jpg" alt="photo de l'agence">
+        <figcaption>
+            <p>Notre Agence de <strong>Paris</strong><br>
+                300 Boulevard de vaugirard, 75015, Paris<br>
+                Ouvert 7j/7 de 09h à 13h et de 14h à 20h<br>
+                01 49 78 21 33
+                <a href="mailto:contact@vtc.com"></a>
+        </figcaption>
+    </figure>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- SLICK JS (JQUERY est requis avant cette ligne) -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="js/script.js"></script>
 </body>
 </html>

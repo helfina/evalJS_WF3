@@ -21,3 +21,20 @@ menuBurger.addEventListener('click', function () {
         console.log('3 entrer else : ' + style.display);
     }
 });
+
+// carousel
+
+$('.carrousel').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    nextArrow: '<i class="bi bi-caret-right-fill next"></i>',
+    prevArrow: '<i class="bi bi-caret-left-fill prev"></i>'
+});
+
+// button hover
+let buttonReserverAndPayer = document.querySelectorAll("body > main > figure > figcaption > button");
+console.log(buttonReserverAndPayer);
+
+buttonReserverAndPayer.addEventListener('mouseenter', function (){
+    buttonReserverAndPayer.style.backgroundColor = "red";
+});
