@@ -22,20 +22,30 @@ nav {
     top: 5px;
 }
 
-
+#menu-burger{
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
 
 .bi, .bi-list{
     font-size: xxx-large;
     color: white;
-    border: 2px solid white;
-    border-radius: 10px;
+    text-align: center;
 }
 
-ul {
+ul#menu {
+    position: absolute;
+    z-index: 5;
     background-color: white;
     margin-top: 55px;
+    width: 100%;
     display: none;
-    z-index: 1;
 }
 
 ul li {
@@ -55,4 +65,9 @@ ul li a {
     margin-top: 60px;
     color: white;
     text-align: center;
+}
+#datapicker{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.74);
+
 }
