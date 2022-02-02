@@ -32,9 +32,12 @@ $('.carrousel').slick({
 });
 
 // button hover
-let buttonReserverAndPayer = document.querySelectorAll("body > main > figure > figcaption > button");
+let buttonReserverAndPayer = document.querySelector("body > main > figure > figcaption > button");
 console.log(buttonReserverAndPayer);
 
-buttonReserverAndPayer.addEventListener('mouseenter', function (){
-    buttonReserverAndPayer.style.backgroundColor = "red";
+
+buttonReserverAndPayer.addEventListener('mouseover', function (){
+    console.log(style.backgroundcolor);
+    buttonReserverAndPayer.style.backgroundcolor = "red";
 });
+

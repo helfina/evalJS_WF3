@@ -81,29 +81,30 @@ a.form-control.btn-success {
     text-align: center;
 }
 
-/*==================================MEDIA HEADER================================================*/
-@media screen and (max-width: 768px) {
 
-    #datapicker {
-        bottom: -285px;
-    }
+/*=================================SECTION===============================================*/
+section.container {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-/*=================================FIN MEDIA HEADER===============================================*/
-
+section.container select {
+    width: 25%;
+}
 
 /*=================================MAIN===============================================*/
 main figure {
-    display: flex;
-    justify-content: space-around;
-    margin: 10% auto;
+    align-items: center;
+    margin: 30px auto;
     width: 100%;
+    justify-content: space-between;
 }
-.carrousel{
+
+main figure div.carrousel {
     width: 300px;
-    /*height: 350px;*/
-    /*overflow: hidden;*/
 }
+
 .next {
     position: absolute;
     top: 60px;
@@ -111,6 +112,7 @@ main figure {
     color: black;
     font-size: 40px;
 }
+
 .prev {
     position: absolute;
     top: 60px;
@@ -123,6 +125,7 @@ main figure {
 main figure figcaption {
     display: flex;
     flex-direction: column;
+    /*margin-left: 15%;*/
 }
 
 button.btn.btn-success {
@@ -141,3 +144,35 @@ footer figure {
 footer figure img {
     width: 200px;
 }
+
+/*==================================MEDIA================================================*/
+@media screen and (max-width: 768px) {
+
+    #datapicker {
+        bottom: -285px;
+    }
+
+    main figure {
+        justify-content: space-between;
+    }
+
+    main figure figcaption {
+        justify-content: center;
+    }
+
+    main figure figcaption h4,
+    main figure figcaption p,
+    main figure figcaption span {
+        display: none;
+    }
+
+    main figure div.carrousel i.next{
+        right: -30px;
+    }
+
+    main figure div.carrousel i.prev{
+        left: -30px;
+    }
+}
+
+/*=================================FIN MEDIA===============================================*/
